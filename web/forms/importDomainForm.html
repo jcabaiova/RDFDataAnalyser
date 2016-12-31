@@ -1,0 +1,42 @@
+<div class="modal-dialog modal-md" role="document">
+    <div class="modal-content blueBorder">
+        <form action="javascript:importDomains();" id="formImportDomain" data-parsley-validate="">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title importDomainsTitle">Import domains and entities !</h4>
+            <p class="help-block">You can import domains and entities together in one file.</p>
+        </div>
+        <div class="modal-body">
+
+
+                <div class="form-group">
+                    <div class="left form-group">
+                        <label for="fileImported">Import file * :<a role=button id="addedDomainNameHelp" data-toggle="popover" title="Import domains and entities." data-content="You can import domains and entities in N-Triple format file. Format is described below."><img class="img-rounded question" src="../imgs/question.png" alt="Help message for input"></a></label>
+                        <input type="file" class="form-control" id="fileImported" data-parsley-validate="" required="" data-parsley-max-file-size="">
+                        <p class="help-block"> Format for operations: <ul class="help-block">
+                        <li>Insert new domain- &lt;http://mydomains.com/domains/GeographyAndPlaces&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "Geography and places".</li>
+                        <li>Insert new entity to domain - &lt;http://dbpedia.org/ontology/Tower&gt; &lt;http://purl.org/dc/terms/subject&gt; &lt;http://mydomains.com/domains/ArtArchitectureAndArchaeology&gt;.</li>
+                        <li>Define links between entities - &lt;http://www.geonames.org/ontology#T.HLL&gt;	&lt;http://www.w3.org/2002/07/owl#sameAs&gt; &lt;http://linkedgeodata.org/ontology/Hill&gt; .</li>
+                    </ul></p>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary sbmButton-color" id="btnImportDomainsSummit" value="Import">
+        </div>
+        </form>
+    </div>
+</div>
+
+<script>
+
+    $('#formImportDomain').parsley();
+    $('[data-toggle="popover"]').popover({
+        placement : 'bottom',
+    });
+
+</script>

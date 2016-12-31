@@ -1,0 +1,43 @@
+<div class="modal-dialog modal-md" role="document">
+
+    <div class="blueBorder modal-content">
+        <form id="formAddDomain" action="javascript:addNewDomain();" data-parsley-validate="">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title addDomainTitle">Add domain !</h4>
+            <p class="help-block">Domain is used for grouping entities in the one area.</p>
+        </div>
+        <div class="modal-body">
+                <div class="form-group">
+                    <div class="left form-group">
+                    <label for="addedDomainName">Domain name * :<a role=button id="addedDomainNameHelp" data-toggle="popover" title="Domain name" data-content="Domain name must be unique. It can contain spaces." ><img class="img-rounded question" src="../imgs/question.png" alt="Help message for input"></a> </label>
+                    <input class="form-control" id="addedDomainName" placeholder="Sport and recreation" data-parsley-validate="" required="" data-parsley-maxlength="50" data-parsley-uniqueDomainName="">
+
+                </div>
+                    <div class="left form-group">
+                        <label for="addedDomainPath">Domain path * :<a role=button id="addedDomainPathHelp" data-toggle="popover" title="Domain path" data-content="Domain path must be unique. It can not contain spaces and it must look like a link. It is filled according to domain name " ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                        <input class="form-control" id="addedDomainPath"  data-parsley-validate="" required="" data-parsley-maxlength="100" data-parsley-uniqueDomainPath="">
+
+                    </div>
+                </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary sbmButton-color" id="btnAddDomainSummit" value="Save changes">
+        </div>
+        </form>
+    </div>
+</div>
+
+<script>
+
+    $('#formAddDomain').parsley();
+    $('[data-toggle="popover"]').popover({
+        placement : 'bottom',
+    });
+
+</script>
+
+
+

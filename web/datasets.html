@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Datasets analysis</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/myStyle.css" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container noLeftPadding noRightPadding">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid noRightPadding">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="landingPage.html"><img id="logo" src="imgs/logo2.png" class="img-responsive" alt="Responsive image"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="datasets.html">Dataset Analysis</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="informationPage.html">About</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+</div>
+
+
+<div class="whiteWithoutPadding container container-fluid">
+    <ul id="datasetAnalysisTabs" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active blackFont"><a class="blackFont" id="datasetDetailTab" href="#datasetContainer" role="tab" data-toggle="tabs" aria-controls="datasetDetailTab" aria-expanded="true">Dataset detail</a></li>
+        <li role="presentation" class="blackFont"><a class="blackFont" id="compareTab" href="#compareDetail" role="tab" data-toggle="tabs" aria-controls="compareTab" aria-expanded="true">Compare</a></li>
+    </ul>
+    <div class="row paddingTop" id="datasetContainer">
+        <div class="col-sm-3 col-md-2 noLeftPadding">
+            <div class="sidebar panel panel-default">
+                <div class="panel-heading bold"><h4>Datasets List</h4></div>
+                <div class="panel-body">
+                    <a id="newDatasetLink" class="bold" data-toggle="modal" data-target="#insertDataset" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New dataset</a>
+                </div>
+                <!-- List group -->
+                <ul class="list-group" id="datasetListSideBar">
+                    <li class="list-group-item"><a href="#" class="datasetLink" id="dataset0" data-identity="0">Overview</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-sm-9 page-content">
+            <div class="datasetDetailContainer">
+
+                <div id="alertMessage">
+                    </div>
+
+
+                <div class="datasetDetail" id="datasetDetail0">
+
+                    <h3>Datasets</h3>
+                    <p> All your datasets are summarized here. You can choose one dataset on the left side to see more details.</p>
+                </div>
+
+
+            </div>
+            <div class="entityDetailContainer">
+                <!--javascript doplni -->
+                <ul class="nav nav-tabs" id="entitiesNavTab" role="tablist"></ul>
+                <div class="tab-content" id="entitiesTab"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="compareDetail">
+        <h3 class="setLineHeight">Compare Datasets</h3>
+        <div class="table-responsive">
+        <table id="compareModeTable"class="table table-bordered">
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    <div class="left form-group">
+                        <label for="dataset1select">First dataset</label>
+                        <select class="form-control" id="dataset1select"></select>
+
+                    </div>
+                </th>
+                <th>
+                    <div class="left form-group">
+                        <label for="dataset2select">First dataset</label>
+                        <select class="form-control" id="dataset2select"></select>
+
+                    </div>
+                </th>
+
+            </tr>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    <div class="left form-group">
+                        <label for="datasetAnalysis1select">First dataset analysis</label>
+                        <select class="form-control" id="datasetAnalysis1select"></select>
+
+                    </div>
+                </th>
+                <th>
+                    <div class="left form-group">
+                        <label for="datasetAnalysis2select">Second dataset analysis</label>
+                        <select class="form-control" id="datasetAnalysis2select"></select>
+
+                    </div>
+                </th>
+
+            </tr>
+        </table>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div id="insertDataset" class="modal fade upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"></div>
+    <div id="editDataset" class="modal fade upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"></div>
+    <div id="deleteDataset" class="modal fade upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"></div>
+    <div id="editDatasetAnalysis" class="modal fade upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"></div>
+    <div id="deleteDatasetAnalysis" class="modal fade upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"></div>
+    <div id="addDatasetAnalysis" class="modal fade upload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"></div>
+
+
+    <footer class="center">
+        <p>&copy; FIT ČVUT 2016</p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.12.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="js/datasets.js"></script>
+    <script src="js/validation-modules/parsley.min.js"></script>
+    <script src="js/validation-modules/validateFunctions.js"></script>
+</body>
+</html>

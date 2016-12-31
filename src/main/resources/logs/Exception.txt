@@ -1,0 +1,43 @@
+2016/12/27 08:53:37 java.sql.SQLException: The url cannot be null
+2016/12/27 18:06:14 java.sql.SQLException: The url cannot be null
+2016/12/27 18:06:32 java.sql.SQLException: The url cannot be null
+2016/12/27 18:07:35 java.sql.SQLException: The url cannot be null
+2016/12/27 18:08:15 java.sql.SQLException: The url cannot be null
+2016/12/27 18:12:21 java.sql.SQLException: The url cannot be null
+2016/12/27 18:12:24 java.sql.SQLException: The url cannot be null
+2016/12/27 18:12:24 java.io.IOException: The system cannot find the path specified
+2016/12/27 18:15:37 java.sql.SQLException: The url cannot be null
+2016/12/27 18:15:40 java.sql.SQLException: The url cannot be null
+2016/12/27 18:15:40 java.io.IOException: The system cannot find the path specified
+2016/12/27 18:20:31 java.sql.SQLException: The url cannot be null
+2016/12/27 18:26:14 java.sql.SQLException: The url cannot be null
+2016/12/27 18:26:35 java.sql.SQLException: The url cannot be null
+2016/12/27 18:26:42 java.sql.SQLException: The url cannot be null
+2016/12/27 18:26:42 java.io.IOException: The system cannot find the path specified
+2016/12/27 19:29:20 java.sql.SQLException: The url cannot be null
+2016/12/27 19:29:20 java.io.IOException: The system cannot find the path specified
+2016/12/27 19:32:05 java.sql.SQLException: The url cannot be null
+2016/12/27 19:32:18 java.sql.SQLException: The url cannot be null
+2016/12/27 19:32:26 java.io.IOException: Access is denied
+2016/12/27 19:34:38 java.sql.SQLException: The url cannot be null
+2016/12/27 19:34:43 java.sql.SQLException: The url cannot be null
+2016/12/27 19:40:47 java.io.IOException: The system cannot find the path specified
+2016/12/27 19:41:15 java.sql.SQLException: The url cannot be null
+2016/12/27 19:41:30 java.sql.SQLException: The url cannot be null
+2016/12/27 19:44:08 java.sql.SQLException: The url cannot be null
+2016/12/27 20:28:31 java.sql.SQLException: The url cannot be null
+2016/12/27 20:28:32 java.io.IOException: The system cannot find the path specified
+2016/12/27 20:29:36 java.sql.SQLException: The url cannot be null
+2016/12/27 20:32:28 java.sql.SQLException: The url cannot be null
+2016/12/27 21:31:52 java.sql.SQLException: The url cannot be null
+2016/12/27 21:32:48 java.sql.SQLException: The url cannot be null
+2016/12/27 21:35:50 java.sql.SQLException: The url cannot be null
+2016/12/27 21:36:46 java.sql.SQLException: The url cannot be null
+2016/12/27 21:44:52 java.sql.SQLException: The url cannot be null
+2016/12/27 21:46:02 java.sql.SQLException: The url cannot be null
+2016/12/27 22:04:17 java.sql.SQLException: The url cannot be null
+2016/12/27 22:10:38 java.sql.SQLException: The url cannot be null
+2016/12/27 22:12:23 java.sql.SQLException: The url cannot be null
+2016/12/27 22:12:23 java.sql.SQLException: The url cannot be null
+2016/12/27 22:12:23 java.sql.SQLException: The url cannot be null
+2016/12/27 22:13:09 java.sql.SQLException: The url cannot be null

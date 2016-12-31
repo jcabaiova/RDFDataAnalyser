@@ -1,0 +1,98 @@
+<div class="modal-dialog modal-md" role="document">
+    <div id="addDAStep1" class="blueBorder modal-content">
+        <form action="javascript:addDatasetAnalysisFunction();" id="formAddDatasetAnalysis" data-parsley-validate="">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title addDatasetAnalysisTitle">Add dataset analysis !</h4>
+            <p class="help-block">You can add another dataset analysis on chosen domains.</p>
+        </div>
+        <div class="modal-body">
+
+                <div class="form-group">
+                    <div class="left form-group">
+                    <label for="addedDatasetAnalysisName">Dataset analysis name * :<a role=button data-toggle="popover" title="Dataset analysis name" data-content="You have to fill name of dataset analysis. Name has to be unique." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                    <input class="addDAInput form-control" id="addedDatasetAnalysisName" placeholder="Dbpedia art" data-parsley-validate="" required="" data-parsley-maxlength="50"   data-parsley-uniqueDatasetAnalysisName=""
+                    >
+                </div>
+                    <div class="left form-group">
+                        <label for="addedDatasetAnalysisDescription">Dataset analysis description :<a role=button data-toggle="popover" title="Dataset analysis description" data-content="You can write here some additional information about dataset analysis." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                        <input class="addDAInput form-control" id="addedDatasetAnalysisDescription" placeholder="Dbpedia analysis only with art domains"
+                        >
+                    </div>
+                    <div class="left form-group">
+                        <div class="row">
+                        <label for="shortCalculationDatasetAnalysis">Short calculation :<a role=button data-toggle="popover" title="Type of calculation" data-content="If this checkbox is checked, it means tha analysis will be calculated without representation of predicates." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a>
+                            <input type="checkbox" id="shortCalculationDatasetAnalysis" checked>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-8 col-sm-8 col-xs-8 noLeftPadding noRightPadding">
+                                <p class="chose-domains">Chose domains for calculation (at least one) * :<a role=button data-toggle="popover" title="Type of calculation" data-content="You can pick domains for this dataset analysis" ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></p>
+                            </div>
+
+                            <div class="checkbox-inline col-md-4 col-sm-4 col-xs-4 noLeftPadding noRightPadding text-right">
+                                <label>
+                                    <input type="checkbox" id="checkAll" checked> Check all
+                                </label>
+                            </div>
+                        </div>
+                    <div id="checkboxes">
+
+                    </div>
+
+                    </div>
+
+
+
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary sbmButton-color" id="btnAddAnalysisSummit" value="Save changes" data-target="#addDatasetAnalysis">
+        </div>
+        </form>
+    </div>
+
+    <div id="addDAstep2" class="blueBorder modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title">Processing...</h3>
+
+
+
+        </div>
+        <div class="modal-body">
+            <p>Your dataset analysis is calculating. You can continue with job in page Dataset Analysis. You will be informed after finishing calculation.</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+            <!-- /.bs-example -->
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+<script>
+    $('#formAddDatasetAnalysis').parsley();
+    $('[data-toggle="popover"]').popover({
+        placement : 'bottom',
+    });
+</script>

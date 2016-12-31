@@ -1,0 +1,33 @@
+<div class="modal-dialog modal-md" role="document">
+    <div class="modal-content blueBorder">
+        <form action="javascript:editEntityFunction();" id="formEditEntity" data-parsley-validate="">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title editEntityTitle">Edit entity: </h4>
+        </div>
+        <div class="modal-body">
+
+                <div class="form-group">
+                    <div class="left form-group">
+                        <label for="entityNameForEdit">Entity path * :	<a role=button data-toggle="popover" title="Entity path" data-content="Entity is used for dataset analysis. Entity path must be unique. It can not contain spaces and it must look like a link.  " ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a> </label>
+                        <input class="form-control" id="entityNameForEdit" data-parsley-validate="" required="" data-parsley-maxlength="100" data-parsley-uniqueEntityPath="">
+                    </div>
+                </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary sbmButton-color" id="btnEditEntitySummit" value="Save changes">
+        </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    $('#formEditEntity').parsley();
+    $('[data-toggle="popover"]').popover({
+        placement : 'bottom',
+    });
+</script>

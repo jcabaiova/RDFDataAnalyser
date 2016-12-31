@@ -1,0 +1,775 @@
+body {
+    color: black;
+    text-shadow: none;
+    height: 100%;
+    background-color: #333;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 20px;
+
+}
+path {
+    stroke: #fff;
+    fill-rule: evenodd;
+}
+
+.tableEntityTd {
+    padding-left: 20px !important;
+}
+
+.tablePredicateTd {
+    padding-left: 40px !important;
+}
+
+.textAllignCenter {
+    text-align: center;
+}
+
+tr.group, tr.group:hover {
+    background-color: #ddd !important;
+}
+input.parsley-error, select.parsley-error, textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+input.parsley-success, select.parsley-success, textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+.parsley-errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+.collapseLink{
+    font-weight: bold;
+}
+
+.tableDomain{
+    background-color: white;
+}
+.btnAddDomain {
+    background-color: #0092FF;
+    color: white;
+}
+
+
+.blueBorderImage {
+    border: double;
+    border-color: #0092FF;
+    border-color: #0092FF;
+}
+
+.noBorder {
+    border: none;
+}
+.inner {
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.masthead {
+    background-color: #333;
+    /*width: 100%;*/
+}
+
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+
+.masthead-nav > li {
+
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.navbar-default .navbar-nav>li>a:hover
+
+ {
+    background-color: transparent;
+    border-bottom: 1px solid;
+    color:#fff;
+}
+
+
+
+.navbar-default {
+    background-color: #333;
+    border-color: #333;
+}
+.mainText {
+    font-size: 450% !important;
+    font-weight: 100 !important;
+    color: #eff8ff;
+    font-family: Monaco;
+
+
+}
+
+
+.jumbotron {
+    background-color: #333;
+    padding-top: 40px !important;
+    padding-bottom: 10px!important;
+    margin-bottom: 40px!important;
+}
+
+
+.white {
+    color: #333;
+    padding-top: 40px !important;
+    background-color: gainsboro;
+    padding-bottom: 40px;
+}
+
+.white-center {
+    color: #333;
+    padding-top: 40px !important;
+    background-color: lightgrey;
+    padding-bottom: 40px;
+}
+
+
+.white h1 {
+    font-size: 40px;
+}
+.fixHeight{
+
+    padding-top:3%;
+}
+
+.image {
+    float: left;
+}
+.mainTitle {
+    margin-bottom: 30px;
+    color: #333;
+    padding-left: 15px;
+}
+.titleRegistration {
+    margin-bottom: 30px;
+    color: #fff;
+    padding-left: 15px;
+    float: left;
+}
+.signup {
+    background-color: #0092FF;
+    font-size: 25px !important;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.registration {
+    background-color: #fff;
+    padding-bottom: 40px;
+    color: #333;
+    padding-top: 40px !important;
+
+}
+
+
+.myForm {
+    text-align: left;
+}
+.noLeftPadding {
+    padding-left: 0px;
+
+}
+
+.noTopPadding {
+    padding-top: 0px;
+
+}
+.marginBtn {
+    margin-top: 26px;
+}
+.noRightPadding {
+    padding-right: 0px;
+
+}
+
+/*my reports-*/
+.paddingBottom {
+     padding-bottom: 10px;
+ }
+
+.paddingTop {
+    padding-top: 10px;
+}
+.paddingTopMore {
+    padding-top: 25px;
+}
+.paddingBottomMore {
+    padding-bottom: 25px;
+}
+.whiteWithoutPadding {
+    color: #333;
+    background-color: #f9f9f9;
+  /*  width:1300px !important;*/
+}
+
+.container {
+
+ /*width: 1300px !important;*/
+}
+
+.left h1, h3, h4,ul,li,td {
+    text-align: left;
+}
+.left button {
+    float: left;
+}
+
+.left li {
+    text-align: left !important;
+}
+.left label {
+  float:left;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.center p {
+    text-align: center;
+}
+.whiteFont {
+    color:#fff
+}
+
+.blackFont {
+    color:black;
+}
+
+.right {
+    float: right
+}
+.page-content {
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+/*
+.page-content h3 {
+
+    margin-top: 10px;
+}
+*/
+.page-content p {
+    text-shadow: none;
+}
+.bold {font-weight: bold;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.setLineHeight {
+    line-height: 60px;
+}
+.blueFont{
+
+    color: #0092FF !important;
+}
+.blueBackground {
+    background-color: #0092FF !important; ;
+}
+.blueBorder {
+    border-color: #0092FF !important; ;
+}
+.redBorder {
+    border-color: red !important;
+}
+.marginBottom {
+    margin-bottom: 20px;
+
+}
+
+.marginTop4 {
+    margin-top: 4px;
+
+}
+
+.login
+{
+    display:none;
+
+}
+.loginForm label,input {
+    color:#333;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #0092FF;
+}
+
+.list-group > .active > a,
+.list-group > .active > a:hover,
+.list-group > .active > a:focus,
+.list-group-item.active
+{
+    color: #fff !important;
+    background-color: #0092FF !important;
+}
+
+.nav>li>a {
+    padding-bottom: 5px;
+}
+
+.list-group-item > a {
+    color: #333;
+}
+
+.panel-body a {
+
+}
+
+#c {
+    background-color: #0f0f0f;
+}
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+
+.drawLine {
+    border-bottom: 1px solid #eee;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #333 !important;
+    border-color: #333 !important;
+
+}
+
+.col-md-2 {
+    padding-right: 0px;
+}
+
+.chose-domains {
+    font-weight: 700;
+}
+
+#btnCompareMode {
+    margin-bottom: 10px;
+}
+
+.table tr.groupboxDomain, tr.groupboxEntity {
+    cursor: pointer;
+}
+
+.table tr.groupboxDomain:hover, tr.groupboxEntity:hover {
+    background-color: transparent;
+}
+
+.glyphicon {
+    padding-right: 10px;
+}
+
+.groupDomain {
+     background-color: #BCDDF7;
+ }
+
+.domainTitle {
+    background-color: #7fb3de;
+}
+.entityTitle {
+    background-color: #a6cee3;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+#logo {
+    max-height: 95%;
+    height: auto;
+    display: block;
+}
+
+#logoLandingPage {
+    height: 100%;
+}
+
+.datasetDetailButtons {
+    text-align: right;
+}
+.datAnalysisMainTitle {
+    padding-left: 15px;
+}
+
+.text-float {
+    text-align: left;
+}
+
+#domainTitleH3 {
+    margin-top: 0px;
+}
+svg text{
+    font-size: 10px;
+}
+g text{
+    font-size: 10px;
+}
+
+.navbarLandingPage {
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mainText2 {
+
+    font-size: 250% !important;
+    font-weight: 100 !important;
+    color: #eff8ff;
+    font-family: Monaco;
+    vertical-align: middle;
+
+}
+
+.colLandinPageText {
+    text-align: center;
+}
+
+.mainImg{
+    text-align: center;
+    padding-top: 20px;
+}
+
+td, th {
+    font-size: 10px;
+}
+
+hr {
+    width: 100%;
+    color: black;
+}
+
+.question {
+    margin-bottom: 3px;
+    padding-left: 2px;
+}
+
+#newDatasetLink{
+    color: #0092FF;
+}
+
+.sbmButton-color {
+    background-color:#0092FF ;
+}
+
+
+@media (min-width: 768px) {
+    .sidebar {
+        /*position: fixed;
+        /*top: 51px;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*z-index: 1000;*/
+        display: block;
+        /*padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;/* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+
+    }
+}
+
+h3 {
+    font-size: 18px;
+}
+
+#endLabel{
+    font-weight: bold;
+}
+
+
+@media (min-width: 480px) {
+    .btn-group-xs {
+        float: right;
+    }
+    #logo  {
+        max-height: 100%;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .inner,
+    .mastfoot,
+    .container,
+    .cover-container,
+    .masthead,
+    .row
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar {
+        display: block;
+    }
+    .masthead {
+       /* width: 100%;*/
+    }
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+    .image {
+        float: left;
+    }
+    #navbar > li > a {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+    .navbar-nav>li>a {
+        padding-top: 20px;
+    }
+    .navbar {
+        font-size: 15px;
+    }
+    #logo {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    #logoLandingPage {
+    height: auto;
+    }
+    .navbarLandingPage {
+        padding-top: 32px;
+        margin-bottom: 0px;
+    }
+     .datasetDetailTitle {
+        padding-left: 0;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    #domainTitleH3 {
+        margin-top: 5px;
+    }
+    .btnGroupDataset {
+        float:right;
+    }
+    .datasetDetailButtons {
+        padding-right: 0;
+    }
+    .datAnalysisButtons {
+        padding-right: 0;
+    }
+    .datAnalysisMainTitle {
+        padding-left: 0px;
+    }
+    .text-float {
+        text-align: right;
+    }
+    .domainTitleBtnGroup {
+        margin-top: 4px;
+    }
+    path {
+        transition: fill 250ms linear;
+        transition-delay: 150ms;
+    }
+
+    path:hover {
+        transition-delay: 0;
+    }
+
+    #tooltip {
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+    }
+    .datAnalysisPanelTitleCol {
+        padding-left: 0px;
+    }
+    svg {
+        font-size: 12px;
+    }
+    g {
+        font-size: 12px;
+    }
+
+    .mainText2 {
+
+        font-size: 250% !important;
+        font-weight: 100 !important;
+        color: #eff8ff;
+        font-family: Monaco;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .colLandinPageText {
+        text-align: left;
+    }
+
+    .mainImg{
+        text-align: right;
+        padding-top: 0px;
+    }
+    td, th {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    .domainTitleBtnGroup {
+        margin-top: 0px;
+    }
+    td, th {
+        font-size: 12px;
+    }
+}
+@media (min-width: 992px) {
+    .inner,
+    .mastfoot,
+    .container,
+    .cover-container,
+    .masthead,
+    .row
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image {
+        float: right;
+    }
+    #navbar > li > a {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+    .navbar {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .rightPadding {
+        padding-right: 0px;
+    }
+    .leftPadding {
+        padding-left: 0px;
+    }
+    svg text{
+        font-size: 14px;
+    }
+    g text{
+        font-size: 14px;
+    }
+    .mainText2 {
+
+        font-size: 350% !important;
+        font-weight: 100 !important;
+        color: #eff8ff;
+        font-family: Monaco;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    td, th {
+        font-size: 14px;
+    }
+
+
+
+
+}
+@media (min-width: 10px) {
+
+    .sidebar {
+        display: block;
+    }
+    .masthead {
+      /*  width: 100%;*/
+    }
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+    .image {
+        float: left;
+    }
+}
+
+
+
