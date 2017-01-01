@@ -1,0 +1,30 @@
+<http://mydomains.com/domains/SportAndRecreation> <http://www.w3.org/2000/01/rdf-schema#label> "Sport and recreation".
+<http://mydomains.com/domains/ArtArchitectureAndArchaeology> <http://www.w3.org/2000/01/rdf-schema#label> "Art,architecture, and archaeology".
+<http://mydomains.com/domains/Biology> <http://www.w3.org/2000/01/rdf-schema#label> "Biology".
+<http://mydomains.com/domains/BusinessEconomicsAndFinance> <http://www.w3.org/2000/01/rdf-schema#label> "Business, economics, and finance".
+<http://mydomains.com/domains/ChemistryAndMineralogy> <http://www.w3.org/2000/01/rdf-schema#label> "Chemistry and mineralogy".
+<http://mydomains.com/domains/Comupting> <http://www.w3.org/2000/01/rdf-schema#label> "Computing".
+<http://mydomains.com/domains/CultureAndSociety> <http://www.w3.org/2000/01/rdf-schema#label> "Culture and society".
+<http://mydomains.com/domains/Education> <http://www.w3.org/2000/01/rdf-schema#label> "Education".
+<http://mydomains.com/domains/EngineeringAndTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering and technology".
+<http://mydomains.com/domains/FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Food and drink".
+<http://mydomains.com/domains/GeographyAndPlaces> <http://www.w3.org/2000/01/rdf-schema#label> "Geography and places".
+<http://mydomains.com/domains/GeologyAndGeophysics> <http://www.w3.org/2000/01/rdf-schema#label> "Geology and geophysics".
+<http://mydomains.com/domains/HealthAndMedicine> <http://www.w3.org/2000/01/rdf-schema#label> "Health and medicine".
+<http://mydomains.com/domains/HeraldryHonorsAndVexillology> <http://www.w3.org/2000/01/rdf-schema#label> "Heraldry, honors, and vexillology".
+<http://mydomains.com/domains/History> <http://www.w3.org/2000/01/rdf-schema#label> "History".
+<http://mydomains.com/domains/LanguageAndLinguistics> <http://www.w3.org/2000/01/rdf-schema#label> "Language and linguistics".
+<http://mydomains.com/domains/Law> <http://www.w3.org/2000/01/rdf-schema#label> "Law".
+<http://mydomains.com/domains/LiteratureAndTheatre> <http://www.w3.org/2000/01/rdf-schema#label> "Literature and theatre".
+<http://mydomains.com/domains/Mathematics> <http://www.w3.org/2000/01/rdf-schema#label> "Mathematics".
+<http://mydomains.com/domains/Media> <http://www.w3.org/2000/01/rdf-schema#label> "Media".
+<http://mydomains.com/domains/Meteorology> <http://www.w3.org/2000/01/rdf-schema#label> "Meteorology".
+<http://mydomains.com/domains/Music> <http://www.w3.org/2000/01/rdf-schema#label> "Music".
+<http://mydomains.com/domains/PhilosophyAndPsychology> <http://www.w3.org/2000/01/rdf-schema#label> "Philosophy and psychology".
+<http://mydomains.com/domains/PhysicsAndAstronomy> <http://www.w3.org/2000/01/rdf-schema#label> "Physics and astronomy".
+<http://mydomains.com/domains/PoliticsAndGovernment> <http://www.w3.org/2000/01/rdf-schema#label> "Politics and government".
+<http://mydomains.com/domains/ReligionMysticismAndMythology> <http://www.w3.org/2000/01/rdf-schema#label> "Religion, mysticism and mythology".
+<http://mydomains.com/domains/RoyaltyAndNobility> <http://www.w3.org/2000/01/rdf-schema#label> "Royalty and nobility".
+<http://mydomains.com/domains/Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport".
+<http://mydomains.com/domains/VideoGaming> <http://www.w3.org/2000/01/rdf-schema#label> "Video gaming".
+<http://mydomains.com/domains/Warfare> <http://www.w3.org/2000/01/rdf-schema#label> "Warfare".
