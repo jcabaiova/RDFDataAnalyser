@@ -77,7 +77,7 @@ public class DbAccess {
 
         try {
             createDatabase();
-            this.URL = "jdbc:sqlite:"+this.getClass().getResource("/db/testDbClientTesting.db").getFile().toString();
+            this.URL = "jdbc:sqlite:"+this.getClass().getResource("/db/rdfDataFinal.db").getFile().toString();
             this.connectionSource = createConnection();
             createTables();
             this.domainDao = DaoManager.createDao(connectionSource, Domain.class);
