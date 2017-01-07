@@ -3,7 +3,7 @@
  * This script is used with HTML page domains.html
  */
 
-var rootUrl = 'http://localhost:8080/rest/restMethod';
+var rootUrl = pathToApplicationOnServer + 'rest/restMethod';
 var domainList;
 var entityList;
 var entityGroupList;
@@ -842,13 +842,13 @@ function drawChart(wi, hi) {
 
 //load modals
 function loadForms() {
-    $('#editDomain').load('http://localhost:8080/forms/editDomainForm.html');
-    $('#deleteDomain').load('http://localhost:8080/forms/deleteDomainForm.html');
-    $('#addEntity').load('http://localhost:8080/forms/addEntityForm.html');
-    $('#addDomain').load('http://localhost:8080/forms/addDomainForm.html');
-    $('#editEntity').load('http://localhost:8080/forms/editEntityForm.html');
-    $('#deleteEntity').load('http://localhost:8080/forms/deleteEntityForm.html');
-    $('#importDomain').load('http://localhost:8080/forms/importDomainForm.html');
+    $('#editDomain').load(pathToApplicationOnServer+'forms/editDomainForm.html');
+    $('#deleteDomain').load(pathToApplicationOnServer+'forms/deleteDomainForm.html');
+    $('#addEntity').load(pathToApplicationOnServer+'forms/addEntityForm.html');
+    $('#addDomain').load(pathToApplicationOnServer+'forms/addDomainForm.html');
+    $('#editEntity').load(pathToApplicationOnServer+'forms/editEntityForm.html');
+    $('#deleteEntity').load(pathToApplicationOnServer+'forms/deleteEntityForm.html');
+    $('#importDomain').load(pathToApplicationOnServer+'forms/importDomainForm.html');
 }
 
 function checkLocalStorage() {

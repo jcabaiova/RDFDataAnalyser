@@ -6,6 +6,7 @@
 
     <groupId>cz.cvut.fit.cabaijan</groupId>
     <artifactId>RDFDataAnalyser</artifactId>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -15,6 +16,13 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <warSourceDirectory>web</warSourceDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -103,42 +111,42 @@
             <artifactId>hdt-jena</artifactId>
             <version>1.1</version>
         </dependency>
-        <dependency>
+       <!-- <dependency>
             <groupId>org.rdfhdt</groupId>
             <artifactId>hdt-java-parent</artifactId>
             <version>1.1</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.rdfhdt</groupId>
             <artifactId>hdt-fuseki</artifactId>
             <version>1.1</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.rdfhdt</groupId>
             <artifactId>hdt-java-package</artifactId>
             <version>1.1</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.rdfhdt</groupId>
             <artifactId>hdt-java-cli</artifactId>
             <version>1.1</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena-libs</artifactId>
             <version>3.1.0</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-tdb</artifactId>
             <version>3.1.0</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-fuseki</artifactId>
             <version>2.4.0</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>

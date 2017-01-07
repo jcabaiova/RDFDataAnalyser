@@ -4,7 +4,7 @@
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title addDatasetTitle">Add dataset analysis !</h4>
+            <h4 class="modal-title addDatasetTitle">Add dataset and analysis !</h4>
             <p class="help-block">You can upload SPARQL endpoint or HDT file with your triples.</p>
 
 
@@ -13,17 +13,17 @@
 
             <div class="form-group">
                     <div class=" left form-group">
-                        <label for="nameDataset">Dataset name * :<a role=button data-toggle="popover" title="Dataset name" data-content="Dataset name has to be unique." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                        <label for="nameDataset">Dataset name * :<a role=button data-toggle="popover" title="Dataset name" data-content="Dataset name has to be unique." ><img class="img-rounded question " src="imgs/question.png" alt="Help message for input"></a></label>
                         <input class="form-control" class="formStep1Input" id="nameDataset" placeholder="Dataset number 1" data-parsley-validate="" required="" data-parsley-maxlength="50"   data-parsley-uniqueDatasetName="">
                     </div>
                     <div class="left form-group">
-                        <label for="descriptionDataset">Dataset description :<a role=button data-toggle="popover" title="Dataset description" data-content="You can write here some additional information about inserting dataset." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                        <label for="descriptionDataset">Dataset description :<a role=button data-toggle="popover" title="Dataset description" data-content="You can write here some additional information about inserting dataset." ><img class="img-rounded question " src="imgs/question.png" alt="Help message for input"></a></label>
                                     <textarea rows="3" class="form-control" class="formStep1Input" id="descriptionDataset"
                                               placeholder="This dataset is about ..."></textarea>
 
                     </div>
                     <div class="left form-group">
-                    <label for="ontologyPredicate">Ontology predicate * :<a role=button data-toggle="popover" title="Ontology predicate" data-content="This predicate will be used in the analysis calculation of dataset. it is defined in concrete dataset ontology." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                    <label for="ontologyPredicate">Ontology predicate * :<a role=button data-toggle="popover" title="Ontology predicate" data-content="This predicate will be used in the analysis calculation of dataset. it is defined in concrete dataset ontology." ><img class="img-rounded question " src="imgs/question.png" alt="Help message for input"></a></label>
                                     <input class="form-control" class="formStep1Input" id="ontologyPredicate"
                                               value="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" data-parsley-validate="" required="">
 
@@ -31,7 +31,7 @@
 
 
                     <div class="left form-group">
-                        <label for="sparqlEndpoint">Sparql endpoint * :<a role=button data-toggle="popover" title="Path to sparql endpoint" data-content="You can fill this input with path to the sparql endpoint or you can import HDT file." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a></label>
+                        <label for="sparqlEndpoint">Sparql endpoint * :<a role=button data-toggle="popover" title="Path to sparql endpoint" data-content="You can fill this input with path to the sparql endpoint or you can import HDT file." ><img class="img-rounded question " src="imgs/question.png" alt="Help message for input"></a></label>
                         <input type="url" class="form-control" id="sparqlEndpoint" class="formStep1Input" placeholder="http://dbpedia.org/sparql" data-parsley-validate="" required="" data-parsley-type="url" data-parsley-uniqueSparqlEndpoint="">
                     </div>
                     or
@@ -42,7 +42,7 @@
                         <p class="help-block">Supported formats: .hdt</p>
                     </div>
                 <div class="left form-group">
-                    <label for="shortCalculation">Short calculation : 	<a role=button data-toggle="popover" title="Type of calculation" data-content="If this checkbox is checked, it means tha analysis will be calculated without representation of predicates." ><img class="img-rounded question " src="../imgs/question.png" alt="Help message for input"></a>
+                    <label for="shortCalculation">Short calculation : 	<a role=button data-toggle="popover" title="Type of calculation" data-content="If this checkbox is checked, it means tha analysis will be calculated without representation of predicates." ><img class="img-rounded question " src="imgs/question.png" alt="Help message for input"></a>
                         <input type="checkbox" id="shortCalculation" checked>
                     </label>
 

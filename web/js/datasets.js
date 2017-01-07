@@ -2,7 +2,7 @@
  * Created by Janka on 10/18/2016.
  * This script is used with HTML page datasets.html
  */
-var rootUrl = 'http://localhost:8080/rest/restMethod';
+var rootUrl = pathToApplicationOnServer + 'rest/restMethod';
 var datasetList;
 var analysisList;
 var datasetAnalysisList;
@@ -1205,12 +1205,12 @@ function fillDatasetsInCombobox(data, comboboxId) {
 
 //----------------------------------------------------loading helpful functions ------------------------------------------------
 function loadForms() {
-    $('#insertDataset').load('http://localhost:8080/forms/insertDatasetForm.html');
-    $('#editDataset').load('http://localhost:8080/forms/editDatasetForm.html');
-    $('#deleteDataset').load('http://localhost:8080/forms/deleteDatasetForm.html');
-    $('#editDatasetAnalysis').load('http://localhost:8080/forms/editDatasetAnalysisForm.html');
-    $('#deleteDatasetAnalysis').load('http://localhost:8080/forms/deleteDatasetAnalysisForm.html');
-    $('#addDatasetAnalysis').load('http://localhost:8080/forms/addDatasetAnalysisForm.html');
+    $('#insertDataset').load(pathToApplicationOnServer+'forms/insertDatasetForm.html');
+    $('#editDataset').load(pathToApplicationOnServer+'forms/editDatasetForm.html');
+    $('#deleteDataset').load(pathToApplicationOnServer+'forms/deleteDatasetForm.html');
+    $('#editDatasetAnalysis').load(pathToApplicationOnServer+'forms/editDatasetAnalysisForm.html');
+    $('#deleteDatasetAnalysis').load(pathToApplicationOnServer+'forms/deleteDatasetAnalysisForm.html');
+    $('#addDatasetAnalysis').load(pathToApplicationOnServer+'forms/addDatasetAnalysisForm.html');
 }
 
 function checkLocalStorage() {

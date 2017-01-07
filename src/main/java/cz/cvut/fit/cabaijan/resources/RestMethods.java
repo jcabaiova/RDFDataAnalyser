@@ -19,6 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+import java.nio.file.Files;
 import java.util.List;
 
 /**
@@ -136,10 +137,16 @@ public class RestMethods {
     @DELETE
     @Path("/deleteTmpFiles")
     @Produces(MediaType.TEXT_PLAIN)
-    public Response deleteEntity() {
+    public Response deleteTmpFiles() {
         try {
-            FileUtils.cleanDirectory(new File("/tmpFiles"));
-            return Response.status(201).build();
+           File file = new File("/tmpFiles");
+            if (file.exists()) {
+                FileUtils.cleanDirectory(new File("/tmpFiles"));
+                return Response.status(201).build();
+            }else {
+                return Response.status(201).build();
+            }
+
         } catch (IOException e) {
             Logger.writeException(e);
             return Response.status(404).build();

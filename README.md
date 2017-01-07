@@ -37,14 +37,21 @@ Import dataset Dbpedia through SPARQL endpoint:
 Latest GitHub source contains Javascript front-end and Java back-end. So, the prerequisites are:
 
  * Java version 1.8
- * Tomcat 8.0.32
+ * Application server, e.g. Tomcat 8.0.32
  * Maven 3
 
 ```bash
 $ git clone git@github.com:jcabaiova/RDFDataAnalyser.git
 $ cd RDFDataAnalyser
-$ MAVEN_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=4096m" mvn install
+$ MAVEN_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=4096m" mvn clean install
 ```
+
+You have to set the path of your web application in web/js/config.js. This path is next used used in files domain.js and datasets.js.
+
+Database has to be set in tha class src/main/java/cz/cvut/fit/cabaijan/dbMethods/DbAccess in variable URL in constructor.
+
+In the case of using the example of database (rdfDataFinal.db), for the possibility create new dataset analysis over dataset GeoNames (in HDT),
+you have to put dataset with name "geonames-11-11-2012.hdt" to src/main/resources/importedDatasets. The file you can download from http://gaia.infor.uva.es/hdt/geonames-11-11-2012.hdt.gz
 
 ## Examples of usage
 
@@ -55,7 +62,7 @@ Directory Examples contains example files for importinf domains and entities in 
  * geonamesOntology.nt - importing entities according to GeoNames ontology
  * geoNamesDbpediaMappings.nt - importing mapping links between Dbpedia and GeoNames entities
 
-Examples databases are in directory Resources. Path to database is set in class DbAccess in constructor:
+Examples databases are in directory Resources. Path to database has to be set in the variable URL in the class DbAccess in constructor:
 ```java
 this.URL = "jdbc:sqlite:"+this.getClass().getResource("/db/rdfDataFinal.db").getFile().toString();
 ```
@@ -69,5 +76,6 @@ Main Java libraries which were used fo the project:
  * ORMlite
  * RDF HDT
  * Apache Jena
+
 ## License
 This code is copyrighted by Czech Technical University in Prague.
