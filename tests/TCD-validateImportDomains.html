@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>TCD-validateImportDomains</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TCD-validateImportDomains</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Domains</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnImportDomains</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=importDomain</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fileImported</td>
+	<td>C:\Users\Janka\Desktop\CXVVJIYM8I.txt</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='fileImported'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnImportDomainsSummit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='fileImported'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fileImported</td>
+	<td>C:\Users\Janka\Desktop\domainList (1).nt</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='fileImported'][class*='parsley-success']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#formImportDomain &gt; div.modal-header &gt; button.close</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

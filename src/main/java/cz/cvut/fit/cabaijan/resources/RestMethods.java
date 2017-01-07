@@ -20,7 +20,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import java.nio.file.Files;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Created by Janka on 9/10/2016.
@@ -244,7 +248,9 @@ public class RestMethods {
                 if (sparqlPath.length() > 0) {
                     dataset.setFileName(sparqlPath);
                 } else if (uploadedInputStream != null) {
-                    dataset.setFileName(fileDetail.getFileName());
+                    String [] splitted = fileDetail.getFileName().split(Pattern.quote("."));
+                    dataset.setFileName(splitted[0]+new SimpleDateFormat("yyyyMMddhhmm").format(new Date())+"."+splitted[1]);
+                    System.out.println(dataset.getFileName());
                 }
                 Dataset datasetToReturn = DB.getDbAccess().createDataset(dataset, uploadedInputStream, shortCalculation);
                 if (datasetToReturn != null) {

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>TCA-ShouldCompareDatasetAnalysis</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TCA-ShouldCompareDatasetAnalysis</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dataset Analysis</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=compareTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dataset1select</td>
+	<td>label=Labs</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=datasetAnalysis1select</td>
+	<td>label=Labs_default</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dataset2select</td>
+	<td>label=LOV1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=datasetAnalysis2select</td>
+	<td>label=LOV_d</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=tr[class*='groupDomain']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=tr[class*='group1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dataset1select</td>
+	<td>label=Labs</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=datasetAnalysis1select</td>
+	<td>label=Labs_default</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=tr[class*='groupDomain']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=tr[class*='group1']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

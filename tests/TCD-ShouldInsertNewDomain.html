@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>TCD-ShouldInsertNewDomain</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TCD-ShouldInsertNewDomain</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Domains</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addDomain</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addedDomainName</td>
+	<td>Sport and recreation</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='addedDomainName'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnAddDomainSummit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addDomain</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addedDomainName</td>
+	<td>Transport</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addedDomainPath</td>
+	<td>http://mydomains.com/domains/Transport</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='addedDomainName'][class*='parsley-success']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='addedDomainPath'][class*='parsley-success']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnAddDomainSummit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=alertMessage</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div[class*='alert-success']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

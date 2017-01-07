@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>TCA-ShouldInsertAndValidateDatasetInHDT</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TCA-ShouldInsertAndValidateDatasetInHDT</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dataset Analysis</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=New dataset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addDatasetStep1</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nameDataset</td>
+	<td>LOV</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='nameDataset'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='sparqlEndpoint'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='inputFile'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nameDataset</td>
+	<td>bwm</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=descriptionDataset</td>
+	<td>nvm co</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='nameDataset'][class*='parsley-success']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sparqlEndpoint</td>
+	<td>ccccccc</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='sparqlEndpoint'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotEditable</td>
+	<td>id=inputFile</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sparqlEndpoint</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertEditable</td>
+	<td>id=inputFile</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputFile</td>
+	<td>C:\Users\Janka\Desktop\CXVVJIYM8I.txt</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='inputFile'][class*='parsley-error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputFile</td>
+	<td>D:\Documents_data\Škola\DP\HDTFiles\bwv.hdt</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[id='inputFile'][class*='parsley-success']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Save changes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=alertMessage</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div[class*='alert-info']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

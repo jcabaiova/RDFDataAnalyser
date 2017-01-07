@@ -10,9 +10,11 @@ The main method of this application is calculation of domain representation for 
  * micro visualization - completeness of information for a given entity type shown in the table
  * dataset comparison
 
- This application should be useful mainly for these, who need to find out domain representation of their Linked Open data dataset or they need to compare twodifferent datasets based on the domain specification.
+ This application should be useful mainly for these, who need to find out domain representation of their Linked Open data dataset or they need to compare two different datasets based on the domain specification.
 
 ## Code Example
+For running only back-end part, you can follow these use cases:
+
 Import of domains and entities in N-Triple format:
 ```java
 ImportDomains importDomains = new ImportDomains();
@@ -32,6 +34,10 @@ Import dataset Dbpedia through SPARQL endpoint:
 ## Motivation
  This application was created as the result of my master thesis work with name "Sumarizing Linked Open Data Datasets".
 
+## Live demo
+
+You can see a live demo running on the Tomcat server: http://147.32.96.4:8080/RDFDataAnalyser-1.0-SNAPSHOT/
+
 ## Installation from source
 
 Latest GitHub source contains Javascript front-end and Java back-end. So, the prerequisites are:
@@ -46,23 +52,25 @@ $ cd RDFDataAnalyser
 $ MAVEN_OPTS="-Xmx4096m -XX:MaxMetaspaceSize=4096m" mvn clean install
 ```
 
-You have to set the path of your web application in web/js/config.js. This path is next used used in files domain.js and datasets.js.
+Then you have to copy unpacked war file to your application server. 
 
-Database has to be set in tha class src/main/java/cz/cvut/fit/cabaijan/dbMethods/DbAccess in variable URL in constructor.
+Next you have to set the path of your web application in web/js/config.js. This path is next used used in files domain.js and datasets.js.
 
-In the case of using the example of database (rdfDataFinal.db), for the possibility create new dataset analysis over dataset GeoNames (in HDT),
+Default database (rdfDataFinal.db) contains these calculated datasets: DBpedia, GeoNames. Database can be set in the class src/main/java/cz/cvut/fit/cabaijan/dbMethods/DbAccess in variable URL in constructor.
+
+In the case of using the default database (rdfDataFinal.db), for the possibility to create new dataset analysis over dataset GeoNames (in HDT),
 you have to put dataset with name "geonames-11-11-2012.hdt" to src/main/resources/importedDatasets. The file you can download from http://gaia.infor.uva.es/hdt/geonames-11-11-2012.hdt.gz
 
 ## Examples of usage
 
-Directory Examples contains example files for importinf domains and entities in N-Triples format :
+Directory Examples contains example files for importing domains and entities in N-Triples format :
 
  * domainsInitialization.nt - initialization of 30 main domains
  * dbpediaOntology.nt - importing entities according to Dbpedia ontology
  * geonamesOntology.nt - importing entities according to GeoNames ontology
  * geoNamesDbpediaMappings.nt - importing mapping links between Dbpedia and GeoNames entities
 
-Examples databases are in directory Resources. Path to database has to be set in the variable URL in the class DbAccess in constructor:
+Examples databases are in directory resources. Path to database has to be set in the variable URL in the class DbAccess in constructor:
 ```java
 this.URL = "jdbc:sqlite:"+this.getClass().getResource("/db/rdfDataFinal.db").getFile().toString();
 ```
@@ -76,6 +84,16 @@ Main Java libraries which were used fo the project:
  * ORMlite
  * RDF HDT
  * Apache Jena
+
+## Testing
+
+Tests cases wrote in the Selenium are stored in the directory /test. For running them, you have to set database of the application to
+src/main/resources/db/testDbClientTesting.db.
+
+Prerequisites:
+
+* Mozilla Firefox
+* Selenium IDE
 
 ## License
 This code is copyrighted by Czech Technical University in Prague.

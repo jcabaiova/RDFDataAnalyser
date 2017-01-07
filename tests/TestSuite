@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="TCD-ShouldShowHideDomainDetail.html">TCD-ShouldShowHideDomainDetail</a></td></tr>
+<tr><td><a href="TCD-ShouldInsertNewDomain.html">TCD-ShouldInsertNewDomain</a></td></tr>
+<tr><td><a href="TCD-ShouldValidateEditDomain.html">TCD-ShouldValidateAndEditDomain</a></td></tr>
+<tr><td><a href="TCD-ShouldValidateAndInsertFirstEntity.html">TCD-ShouldValidateAndInsertFirstEntity</a></td></tr>
+<tr><td><a href="TCD-ShouldDeleteEntity.html">TCD-ShouldDeleteEntity</a></td></tr>
+<tr><td><a href="TCD-ShouldEditEntity.html">TCD-ShouldEditEntity</a></td></tr>
+<tr><td><a href="TCD-ShouldDeleteDomain.html">TCD-ShouldDeleteDomain</a></td></tr>
+<tr><td><a href="TCD-validateImportDomains.html">TCD-validateImportDomains</a></td></tr>
+<tr><td><a href="TCA-ShouldShowHideParts.html">TCA-ShouldShowHideParts</a></td></tr>
+<tr><td><a href="TCA-ShouldInsertAndValidateDatasetInHDT.html">TCA-ShouldInsertAndValidateDatasetInHDT</a></td></tr>
+<tr><td><a href="TCA-ShouldInsertAndValidateDatasetSparqlEndpoint.html">TCA-ShouldInsertAndValidateDatasetSparqlEndpoint</a></td></tr>
+<tr><td><a href="TCA-ShouldEditAndValidateDataset.html">TCA-ShouldEditAndValidateDataset</a></td></tr>
+<tr><td><a href="TCA-ShouldAddAndValidateDatasetAnalysis.html">TCA-ShouldAddAndValidateDatasetAnalysis</a></td></tr>
+<tr><td><a href="TCA-ShouldEditAndValidateDatasetAnalysis.html">TCA-ShouldEditAndValidateDatasetAnalysis</a></td></tr>
+<tr><td><a href="TCA-ShouldCompareDatasetAnalysis.html">TCA-ShouldCompareDatasetAnalysis</a></td></tr>
+<tr><td><a href="TCA-ShouldDeleteDatasetAnalysis.html">TCA-ShouldDeleteDatasetAnalysis</a></td></tr>
+<tr><td><a href="TCA-ShouldDeleteDatasetAndDatasetAnalysis.html">TCA-ShouldDeleteDatasetAndDatasetAnalysis</a></td></tr>
+</tbody></table>
+</body>
+</html>

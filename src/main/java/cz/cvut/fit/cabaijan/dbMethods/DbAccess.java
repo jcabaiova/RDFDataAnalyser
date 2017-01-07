@@ -77,8 +77,7 @@ public class DbAccess {
 
         try {
             createDatabase();
-           // this.URL = "jdbc:sqlite:C:\\Users\\Janka\\Diplomka\\RDFDataAnalyser\\db\\rdfDataTest.db";
-            this.URL = "jdbc:sqlite:"+this.getClass().getResource("/db/rdfDataFinal.db").getFile().toString();
+            this.URL = "jdbc:sqlite:"+this.getClass().getResource("/db/testDbClientTesting.db").getFile().toString();
             this.connectionSource = createConnection();
             createTables();
             this.domainDao = DaoManager.createDao(connectionSource, Domain.class);
@@ -566,7 +565,7 @@ public class DbAccess {
             }
 
             if (dataset.getHdt()) {
-                HelpfulMethods.deleteTmpFile("C:\\Users\\Janka\\Diplomka\\RDFDataAnalyser\\importedDatasets\\" + dataset.getFileName());
+                HelpfulMethods.deleteTmpFile(this.getClass().getResource("/importedDatasets/").getFile().toString() + dataset.getFileName());
             }
             datasetDao.delete(dataset);
             return true;
